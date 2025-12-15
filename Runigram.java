@@ -122,7 +122,7 @@ public class Runigram {
 		int red = pixel.getRed();
 		int green = pixel.getGreen();
 		int blue = pixel.getBlue();
-		int luminance = (int) Math.round(0.299 * red + 0.587 * green + 0.114 * blue);
+		int luminance = (int)(0.299 * red + 0.587 * green + 0.114 * blue);
 		Color grayScaled = new Color(luminance,luminance,luminance);
 		return grayScaled;
 	}
