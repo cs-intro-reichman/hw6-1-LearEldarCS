@@ -13,9 +13,9 @@ import java.awt.Color;
 public class Editor3 {
 
 	public static void main (String[] args) {
-		String source = args[0];
-		String target = args[1];
-		int n = Integer.parseInt(args[2]);
+		String source = args[0]; //The PPM of the Source
+		String target = args[1]; //The PPM of the target
+		int n = Integer.parseInt(args[2]); //The Steps 
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
 		Runigram.setCanvas(sourceImage);
